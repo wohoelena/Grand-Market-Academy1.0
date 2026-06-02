@@ -11044,3 +11044,1019 @@ html[lang="en"] .traders-page .playbook-card h3 {
     white-space: normal;
   }
 }
+
+/* Homepage navigation title scale refinement */
+main > section.frontdesk-direction-section .section-head h2 {
+  max-width: 620px;
+  font-size: clamp(22px, 2.05vw, 28px);
+  line-height: 1.18;
+}
+
+.conversion-path-copy h2 {
+  max-width: 610px;
+  font-size: clamp(22px, 2.35vw, 32px);
+  line-height: 1.18;
+}
+
+html[lang="en"] main > section.frontdesk-direction-section .section-head h2,
+html[lang="en"] .conversion-path-copy h2 {
+  font-size: clamp(21px, 2.05vw, 29px);
+  line-height: 1.2;
+}
+
+html[lang="zh-CN"] body main > section.frontdesk-direction-section:not(.hero):not(.journey-strip) .section-head h2 {
+  max-width: 620px;
+  font-size: clamp(22px, 2.05vw, 28px);
+  line-height: 1.18;
+}
+
+@media (max-width: 760px) {
+  main > section.frontdesk-direction-section .section-head h2,
+  .conversion-path-copy h2 {
+    font-size: clamp(21px, 6vw, 27px);
+  }
+}
+
+/* Learning path page title scale refinement */
+body main > section#pathway-detail.home-learning-path:not(.hero):not(.journey-strip) .section-head h2 {
+  max-width: 680px;
+  font-size: clamp(21px, 2.05vw, 28px);
+  line-height: 1.2;
+}
+
+body main > section#pathway-detail.home-learning-path + .conversion-path-section .conversion-path-copy h2 {
+  max-width: 560px;
+  font-size: clamp(20px, 1.95vw, 27px);
+  line-height: 1.22;
+}
+
+html[lang="en"] body main > section#pathway-detail.home-learning-path:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] body main > section#pathway-detail.home-learning-path + .conversion-path-section .conversion-path-copy h2 {
+  font-size: clamp(19.5px, 1.8vw, 25px);
+  line-height: 1.24;
+}
+
+@media (max-width: 760px) {
+  body main > section#pathway-detail.home-learning-path:not(.hero):not(.journey-strip) .section-head h2,
+  body main > section#pathway-detail.home-learning-path + .conversion-path-section .conversion-path-copy h2 {
+    font-size: clamp(20px, 5.7vw, 25px);
+  }
+}
+
+/* Courses page title scale refinement */
+body main > section#course-map.home-featured-courses:not(.hero):not(.journey-strip) .section-head h2 {
+  max-width: 640px;
+  font-size: clamp(21px, 2.05vw, 28px);
+  line-height: 1.2;
+}
+
+body main > section#course-map.home-featured-courses + .conversion-path-section .conversion-path-copy h2 {
+  max-width: 540px;
+  font-size: clamp(20px, 1.95vw, 27px);
+  line-height: 1.22;
+}
+
+html[lang="en"] body main > section#course-map.home-featured-courses:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] body main > section#course-map.home-featured-courses + .conversion-path-section .conversion-path-copy h2 {
+  font-size: clamp(19.5px, 1.8vw, 25px);
+  line-height: 1.24;
+}
+
+@media (max-width: 760px) {
+  body main > section#course-map.home-featured-courses:not(.hero):not(.journey-strip) .section-head h2,
+  body main > section#course-map.home-featured-courses + .conversion-path-section .conversion-path-copy h2 {
+    font-size: clamp(20px, 5.7vw, 25px);
+  }
+}
+
+/* RG146 curriculum typography and layout refinement */
+.rg146-page main > section:not(.hero):not(.journey-strip):not(.rg146-education-disclaimer) {
+  padding-block: clamp(54px, 5.8vw, 76px);
+}
+
+.rg146-page main > section:not(.hero):not(.journey-strip) .section-head {
+  margin-bottom: clamp(18px, 2.2vw, 28px);
+}
+
+.rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+  display: grid;
+  grid-template-columns: minmax(150px, .26fr) minmax(0, 1fr);
+  gap: 7px clamp(22px, 3vw, 36px);
+  align-items: start;
+}
+
+.rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+  grid-row: 1 / span 2;
+  max-width: 170px;
+  padding-top: 4px;
+  font-size: clamp(10.8px, .8vw, 12px);
+  line-height: 1.38;
+}
+
+.rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+.rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+  grid-column: 2;
+}
+
+.rg146-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+.rg146-page #standards-map h2,
+.rg146-page #contact h2 {
+  max-width: 760px;
+  font-size: clamp(21px, 2.05vw, 28px) !important;
+  line-height: 1.2;
+  text-wrap: normal;
+}
+
+.rg146-page main > section:not(.hero):not(.journey-strip) .section-head p,
+.rg146-page #standards-map p,
+.rg146-page #contact p {
+  max-width: 720px;
+  font-size: clamp(14px, 1.15vw, 15.4px);
+  line-height: 1.68;
+}
+
+.rg146-page .depth-copy h3 {
+  font-size: clamp(20px, 1.9vw, 26px) !important;
+  line-height: 1.2;
+  text-wrap: normal;
+}
+
+.rg146-page .path-list {
+  gap: 10px;
+}
+
+.rg146-page .path-item {
+  padding: 20px 22px 20px 70px;
+}
+
+.rg146-page .path-item::before {
+  top: 21px;
+  left: 20px;
+  font-size: 12px;
+}
+
+.rg146-page .path-item h3 {
+  margin-bottom: 4px;
+  font-size: clamp(15.8px, 1.2vw, 17.2px) !important;
+  line-height: 1.25;
+}
+
+.rg146-page .depth-row strong,
+.rg146-page .process-rail strong,
+.rg146-page .evidence-row strong {
+  font-size: clamp(15.5px, 1.2vw, 17.5px) !important;
+  line-height: 1.25;
+}
+
+.rg146-page .depth-row p,
+.rg146-page .process-rail p,
+.rg146-page .evidence-row p {
+  font-size: clamp(13.6px, 1vw, 14.5px);
+  line-height: 1.62;
+}
+
+.rg146-page .process-rail {
+  gap: 0;
+}
+
+.rg146-page .process-rail div {
+  min-height: 144px;
+  padding: 20px 20px;
+}
+
+.rg146-page .process-rail span {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+html[lang="en"] .rg146-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] .rg146-page #standards-map h2,
+html[lang="en"] .rg146-page #contact h2 {
+  font-size: clamp(19.5px, 1.82vw, 25px) !important;
+  line-height: 1.24;
+}
+
+html[lang="en"] .rg146-page .depth-copy h3 {
+  font-size: clamp(18.8px, 1.72vw, 23.5px) !important;
+  line-height: 1.24;
+}
+
+@media (max-width: 920px) {
+  .rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow,
+  .rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+  .rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .rg146-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+    max-width: none;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .rg146-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+  .rg146-page #standards-map h2,
+  .rg146-page #contact h2 {
+    font-size: clamp(20px, 5.7vw, 25px) !important;
+  }
+
+  .rg146-page .path-item {
+    padding: 18px 18px 18px 62px;
+  }
+
+  .rg146-page .path-item::before {
+    left: 18px;
+  }
+}
+
+/* Quant Academy typography and research-manual layout refinement */
+.quant-page main > section:not(.hero):not(.journey-strip) {
+  padding-block: clamp(54px, 5.8vw, 76px);
+}
+
+.quant-page main > section:not(.hero):not(.journey-strip) .section-head {
+  margin-bottom: clamp(18px, 2.2vw, 28px);
+}
+
+.quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+  display: grid;
+  grid-template-columns: minmax(150px, .26fr) minmax(0, 1fr);
+  gap: 7px clamp(22px, 3vw, 36px);
+  align-items: start;
+}
+
+.quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+  grid-row: 1 / span 2;
+  max-width: 170px;
+  padding-top: 4px;
+  font-size: clamp(10.8px, .8vw, 12px);
+  line-height: 1.38;
+}
+
+.quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+.quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+  grid-column: 2;
+}
+
+.quant-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+.quant-page #contact h2 {
+  max-width: 780px;
+  font-size: clamp(21px, 2.05vw, 28px) !important;
+  line-height: 1.2;
+  text-wrap: normal;
+}
+
+.quant-page main > section:not(.hero):not(.journey-strip) .section-head p,
+.quant-page #contact p {
+  max-width: 730px;
+  font-size: clamp(14px, 1.15vw, 15.4px);
+  line-height: 1.68;
+}
+
+.quant-page .depth-copy h3 {
+  max-width: 720px;
+  font-size: clamp(20px, 1.9vw, 26px) !important;
+  line-height: 1.2;
+  text-wrap: normal;
+}
+
+.quant-page .card h3,
+.quant-page .article-card h3 {
+  font-size: clamp(16px, 1.25vw, 18px) !important;
+  line-height: 1.26;
+}
+
+.quant-page .depth-row strong,
+.quant-page .process-rail strong,
+.quant-page .glossary-strip strong,
+.quant-page .source-grid strong {
+  font-size: clamp(15.5px, 1.2vw, 17.5px) !important;
+  line-height: 1.25;
+}
+
+.quant-page .depth-row p,
+.quant-page .process-rail p,
+.quant-page .glossary-strip span,
+.quant-page .source-grid span {
+  font-size: clamp(13.6px, 1vw, 14.5px);
+  line-height: 1.62;
+}
+
+.quant-page .process-rail {
+  gap: 0;
+}
+
+.quant-page .process-rail div {
+  min-height: 144px;
+  padding: 20px 20px;
+}
+
+.quant-page .process-rail span {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.quant-page .terminal-row strong,
+.quant-page .terminal-row span {
+  line-height: 1.42;
+}
+
+.quant-page .terminal-row strong {
+  font-size: clamp(13.5px, 1vw, 15px);
+}
+
+html[lang="en"] .quant-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] .quant-page #contact h2 {
+  font-size: clamp(19.5px, 1.82vw, 25px) !important;
+  line-height: 1.24;
+}
+
+html[lang="en"] .quant-page .depth-copy h3 {
+  font-size: clamp(18.8px, 1.72vw, 23.5px) !important;
+  line-height: 1.24;
+}
+
+@media (max-width: 920px) {
+  .quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow,
+  .quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+  .quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .quant-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+    max-width: none;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .quant-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+  .quant-page #contact h2 {
+    font-size: clamp(20px, 5.7vw, 25px) !important;
+  }
+}
+
+/* Trader Training typography and training-manual layout refinement */
+.traders-page main > section:not(.hero):not(.journey-strip) {
+  padding-block: clamp(54px, 5.8vw, 76px);
+}
+
+.traders-page main > section:not(.hero):not(.journey-strip) .section-head {
+  margin-bottom: clamp(18px, 2.2vw, 28px);
+}
+
+.traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+  display: grid;
+  grid-template-columns: minmax(150px, .26fr) minmax(0, 1fr);
+  gap: 7px clamp(22px, 3vw, 36px);
+  align-items: start;
+}
+
+.traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+  grid-row: 1 / span 2;
+  max-width: 170px;
+  padding-top: 4px;
+  font-size: clamp(10.8px, .8vw, 12px);
+  line-height: 1.38;
+}
+
+.traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+.traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+  grid-column: 2;
+}
+
+.traders-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+.traders-page #framework h2,
+.traders-page #contact h2 {
+  max-width: 780px;
+  font-size: clamp(21px, 2.05vw, 28px) !important;
+  line-height: 1.2 !important;
+  text-wrap: normal;
+}
+
+.traders-page main > section:not(.hero):not(.journey-strip) .section-head p,
+.traders-page #framework p,
+.traders-page #contact p {
+  max-width: 730px;
+  font-size: clamp(14px, 1.15vw, 15.4px);
+  line-height: 1.68;
+}
+
+.traders-page #framework .eyebrow,
+.traders-page #contact .eyebrow {
+  font-size: clamp(10.8px, .8vw, 12px);
+  line-height: 1.38;
+}
+
+.traders-page .depth-copy h3,
+.traders-page .playbook-statement strong {
+  max-width: 720px;
+  font-size: clamp(20px, 1.9vw, 26px) !important;
+  line-height: 1.2;
+  text-wrap: normal;
+}
+
+.traders-page .card h3,
+.traders-page .article-card h3,
+.traders-page .feature strong,
+.traders-page .playbook-card h3 {
+  font-size: clamp(16px, 1.25vw, 18px) !important;
+  line-height: 1.26;
+}
+
+.traders-page .playbook-principles strong,
+.traders-page .depth-row strong,
+.traders-page .process-rail strong,
+.traders-page .glossary-strip strong,
+.traders-page .source-grid strong,
+.traders-page .terminal-row strong {
+  font-size: clamp(15.5px, 1.2vw, 17.5px) !important;
+  line-height: 1.25;
+}
+
+.traders-page .playbook-principles p,
+.traders-page .depth-row p,
+.traders-page .process-rail p,
+.traders-page .glossary-strip span,
+.traders-page .source-grid span,
+.traders-page .terminal-row p {
+  font-size: clamp(13.6px, 1vw, 14.5px);
+  line-height: 1.62;
+}
+
+.traders-page .process-rail {
+  gap: 0;
+}
+
+.traders-page .process-rail div {
+  min-height: 144px;
+  padding: 20px 20px;
+}
+
+.traders-page .process-rail span {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.traders-page .playbook-card {
+  padding: clamp(18px, 2vw, 24px);
+}
+
+.traders-page .playbook-card h3 {
+  margin: 9px 0 13px;
+}
+
+html[lang="en"] .traders-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] .traders-page #framework h2,
+html[lang="en"] .traders-page #contact h2 {
+  font-size: clamp(19.5px, 1.82vw, 25px) !important;
+  line-height: 1.24 !important;
+}
+
+html[lang="en"] .traders-page .depth-copy h3,
+html[lang="en"] .traders-page .playbook-statement strong {
+  font-size: clamp(18.8px, 1.72vw, 23.5px) !important;
+  line-height: 1.24;
+}
+
+@media (max-width: 920px) {
+  .traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow,
+  .traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+  .traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .traders-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+    max-width: none;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .traders-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+  .traders-page #framework h2,
+  .traders-page #contact h2 {
+    font-size: clamp(20px, 5.7vw, 25px) !important;
+  }
+}
+
+/* Knowledge Library typography and research-directory layout refinement */
+.knowledge-page main > section:not(.hero):not(.journey-strip) {
+  padding-block: clamp(54px, 5.8vw, 76px);
+}
+
+.knowledge-page main > section:not(.hero):not(.journey-strip) .section-head {
+  margin-bottom: clamp(18px, 2.2vw, 28px);
+}
+
+.knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+  display: grid;
+  grid-template-columns: minmax(150px, .26fr) minmax(0, 1fr);
+  gap: 7px clamp(22px, 3vw, 36px);
+  align-items: start;
+}
+
+.knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+  grid-row: 1 / span 2;
+  max-width: 170px;
+  padding-top: 4px;
+  font-size: clamp(10.8px, .8vw, 12px);
+  line-height: 1.38;
+}
+
+.knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+.knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+  grid-column: 2;
+}
+
+.knowledge-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+.knowledge-page .topic-index-copy h2,
+.knowledge-page #contact h2 {
+  max-width: 780px;
+  font-size: clamp(21px, 2.05vw, 28px) !important;
+  line-height: 1.2 !important;
+  text-wrap: normal;
+}
+
+.knowledge-page main > section:not(.hero):not(.journey-strip) .section-head p,
+.knowledge-page .topic-index-copy p,
+.knowledge-page #contact p {
+  max-width: 730px;
+  font-size: clamp(14px, 1.15vw, 15.4px);
+  line-height: 1.68;
+}
+
+.knowledge-page .depth-copy h3 {
+  max-width: 720px;
+  font-size: clamp(20px, 1.9vw, 26px) !important;
+  line-height: 1.2;
+  text-wrap: normal;
+}
+
+.knowledge-page .article-card h3 {
+  font-size: clamp(16px, 1.25vw, 18px) !important;
+  line-height: 1.26;
+}
+
+.knowledge-page .depth-row strong,
+.knowledge-page .process-rail strong,
+.knowledge-page .glossary-strip strong,
+.knowledge-page .source-grid strong,
+.knowledge-page .terminal-row strong,
+.knowledge-page .topic-index-link strong {
+  font-size: clamp(15.5px, 1.2vw, 17.5px) !important;
+  line-height: 1.25;
+}
+
+.knowledge-page .depth-row p,
+.knowledge-page .process-rail p,
+.knowledge-page .glossary-strip span,
+.knowledge-page .source-grid span,
+.knowledge-page .terminal-row span,
+.knowledge-page .terminal-row p,
+.knowledge-page .topic-index-link p {
+  font-size: clamp(13.6px, 1vw, 14.5px);
+  line-height: 1.62;
+}
+
+.knowledge-page .process-rail {
+  gap: 0;
+}
+
+.knowledge-page .process-rail div {
+  min-height: 144px;
+  padding: 20px 20px;
+}
+
+.knowledge-page .process-rail span {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.knowledge-page .topic-index-link {
+  padding: clamp(18px, 2vw, 24px);
+}
+
+.knowledge-page .topic-index-link > span {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+html[lang="en"] .knowledge-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] .knowledge-page .topic-index-copy h2,
+html[lang="en"] .knowledge-page #contact h2 {
+  font-size: clamp(19.5px, 1.82vw, 25px) !important;
+  line-height: 1.24 !important;
+}
+
+html[lang="en"] .knowledge-page .depth-copy h3 {
+  font-size: clamp(18.8px, 1.72vw, 23.5px) !important;
+  line-height: 1.24;
+}
+
+@media (max-width: 920px) {
+  .knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow,
+  .knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) h2,
+  .knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .knowledge-page main > section:not(.hero):not(.journey-strip) .section-head:has(.eyebrow) .eyebrow {
+    max-width: none;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .knowledge-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+  .knowledge-page .topic-index-copy h2,
+  .knowledge-page #contact h2 {
+    font-size: clamp(20px, 5.7vw, 25px) !important;
+  }
+}
+
+/* Community page rhythm and benefits refinement */
+.community-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+.community-page .community-join-copy h2 {
+  max-width: 780px;
+  font-size: clamp(21px, 2.05vw, 28px) !important;
+  line-height: 1.2 !important;
+  text-wrap: normal;
+}
+
+.community-page main > section:not(.hero):not(.journey-strip) .section-head p,
+.community-page .community-join-copy p {
+  max-width: 730px;
+  font-size: clamp(14px, 1.15vw, 15.4px);
+  line-height: 1.68;
+}
+
+.community-page .community-benefit-grid {
+  position: relative;
+  gap: clamp(18px, 2.2vw, 26px);
+  padding-top: 36px;
+  border: 0;
+}
+
+.community-page .community-benefit-grid::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 8px;
+  right: 8px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(184, 138, 0, .42), rgba(7, 28, 62, .16), transparent);
+}
+
+.community-page .community-benefit-card {
+  position: relative;
+  min-height: 190px;
+  padding: 23px 21px 22px;
+  border: 1px solid rgba(7, 28, 62, .08);
+  border-radius: 8px;
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, .74), rgba(255, 250, 231, .34)),
+    radial-gradient(ellipse at 92% 10%, rgba(255, 209, 26, .18), transparent 38%);
+  box-shadow:
+    0 18px 46px rgba(34, 36, 40, .052),
+    inset 0 1px 0 rgba(255, 255, 255, .72);
+}
+
+.community-page .community-benefit-card::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  left: 22px;
+  width: 13px;
+  height: 13px;
+  border: 4px solid rgba(255, 255, 255, .9);
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 1px rgba(184, 138, 0, .42), 0 10px 22px rgba(184, 138, 0, .18);
+}
+
+.community-page .community-benefit-card > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 24px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(184, 138, 0, .22);
+  border-radius: 999px;
+  background: rgba(255, 248, 214, .72);
+  color: var(--gold-deep);
+  font-size: 11px;
+  font-weight: 920;
+  letter-spacing: .08em;
+}
+
+.community-page .community-benefit-card strong [data-lang-panel],
+.community-page .community-benefit-card p [data-lang-panel] {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: inherit;
+  overflow-wrap: normal;
+}
+
+.community-page .community-benefit-card strong {
+  display: block;
+  max-width: 20ch;
+  color: #171815;
+  font-size: clamp(16px, 1.25vw, 18px) !important;
+  line-height: 1.26;
+}
+
+.community-page .community-benefit-card p {
+  margin: 12px 0 0;
+  color: #48505a;
+  font-size: clamp(13.4px, 1vw, 14.4px);
+  line-height: 1.62;
+}
+
+html[lang="en"] .community-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] .community-page .community-join-copy h2 {
+  font-size: clamp(19.5px, 1.82vw, 25px) !important;
+  line-height: 1.24 !important;
+}
+
+.community-page .community-join-copy h2 {
+  font-size: clamp(19px, 1.78vw, 24px) !important;
+  line-height: 1.24 !important;
+}
+
+html[lang="en"] .community-page .community-join-copy h2 {
+  font-size: clamp(18.5px, 1.68vw, 23px) !important;
+}
+
+@media (max-width: 920px) {
+  .community-page .community-benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: 0;
+  }
+
+  .community-page .community-benefit-grid::before,
+  .community-page .community-benefit-card::before {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .community-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+  .community-page .community-join-copy h2 {
+    font-size: clamp(20px, 5.7vw, 25px) !important;
+  }
+
+  .community-page .community-benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .community-page .community-benefit-card {
+    min-height: 0;
+    padding: 20px;
+  }
+}
+
+/* About page institutional typography refinement */
+.about-page main > section:not(.hero):not(.journey-strip) {
+  padding-block: clamp(54px, 5.8vw, 76px);
+}
+
+.about-page main > section:not(.hero):not(.journey-strip) .section-head {
+  margin-bottom: clamp(18px, 2.2vw, 28px);
+}
+
+.about-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+.about-page #institutional-profile .split > [data-lang-panel] > h2,
+.about-page .trust-copy h2,
+.about-page #contact h2 {
+  max-width: 780px;
+  font-size: clamp(21px, 2.05vw, 28px) !important;
+  line-height: 1.2 !important;
+  text-wrap: normal;
+}
+
+.about-page main > section:not(.hero):not(.journey-strip) .section-head p,
+.about-page #institutional-profile .split > [data-lang-panel] > p,
+.about-page .trust-copy p,
+.about-page #contact p {
+  max-width: 730px;
+  font-size: clamp(14px, 1.15vw, 15.4px);
+  line-height: 1.68;
+}
+
+.about-page .depth-copy h3 {
+  max-width: 720px;
+  font-size: clamp(20px, 1.9vw, 26px) !important;
+  line-height: 1.2;
+  text-wrap: normal;
+}
+
+.about-page .metric-band strong,
+.about-page .depth-row strong,
+.about-page .glossary-strip strong,
+.about-page .terminal-row strong,
+.about-page .evidence-row strong,
+.about-page .connection-step strong,
+.about-page .source-list strong {
+  font-size: clamp(15.5px, 1.2vw, 17.5px) !important;
+  line-height: 1.25;
+}
+
+.about-page .metric-band p,
+.about-page .depth-row p,
+.about-page .glossary-strip span,
+.about-page .terminal-row span,
+.about-page .terminal-row p,
+.about-page .evidence-row p,
+.about-page .connection-step p,
+.about-page .source-list a,
+.about-page .trust-microcopy {
+  font-size: clamp(13.6px, 1vw, 14.5px);
+  line-height: 1.62;
+}
+
+.about-page .metric-band span,
+.about-page .depth-row > span,
+.about-page .evidence-row > span,
+.about-page .connection-step > span {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+html[lang="en"] .about-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+html[lang="en"] .about-page #institutional-profile .split > [data-lang-panel] > h2,
+html[lang="en"] .about-page .trust-copy h2,
+html[lang="en"] .about-page #contact h2 {
+  font-size: clamp(19.5px, 1.82vw, 25px) !important;
+  line-height: 1.24 !important;
+}
+
+html[lang="en"] .about-page .depth-copy h3 {
+  font-size: clamp(18.8px, 1.72vw, 23.5px) !important;
+  line-height: 1.24;
+}
+
+@media (max-width: 760px) {
+  .about-page main > section:not(.hero):not(.journey-strip) .section-head h2,
+  .about-page #institutional-profile .split > [data-lang-panel] > h2,
+  .about-page .trust-copy h2,
+  .about-page #contact h2 {
+    font-size: clamp(20px, 5.7vw, 25px) !important;
+  }
+}
+
+/* Footer pathway refinement: clearer brand note and next-step flow */
+.site-footer .footer-inner {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+  padding-top: clamp(46px, 5vw, 62px);
+}
+
+.site-footer .footer-inner > div:first-child {
+  display: grid;
+  grid-template-columns: minmax(250px, .42fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 58px);
+  align-items: end;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(7, 28, 62, .1);
+}
+
+.site-footer .footer-inner > div:first-child > .brand {
+  align-self: start;
+}
+
+.site-footer .footer-inner > div:first-child > p {
+  max-width: 34ch;
+  margin: 12px 0 0;
+  color: #48505a;
+  font-size: clamp(13.2px, 1vw, 14.4px);
+  line-height: 1.62;
+}
+
+.site-footer .footer-pathway {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: none;
+  margin-top: 0;
+  padding-top: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.site-footer .footer-step-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 4px 12px;
+  min-height: 0;
+  padding: 14px 14px 13px;
+  border: 1px solid rgba(7, 28, 62, .085);
+  border-radius: 8px;
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, .72), rgba(255, 249, 225, .28)),
+    rgba(255, 255, 255, .34);
+  box-shadow:
+    0 12px 32px rgba(34, 36, 40, .04),
+    inset 0 1px 0 rgba(255, 255, 255, .72);
+}
+
+.site-footer .footer-step-link > span {
+  grid-row: 1 / span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 22px;
+  margin-top: 1px;
+  border: 1px solid rgba(184, 138, 0, .2);
+  border-radius: 999px;
+  background: rgba(255, 248, 214, .7);
+  font-size: 10.5px;
+  letter-spacing: .06em;
+}
+
+.site-footer .footer-step-link strong {
+  font-size: clamp(13.4px, 1vw, 14.8px);
+  line-height: 1.22;
+}
+
+.site-footer .footer-step-link em {
+  font-size: 12.4px;
+  line-height: 1.32;
+}
+
+.site-footer .footer-links {
+  grid-column: 1 / -1;
+  padding-top: 2px;
+}
+
+.site-footer .risk {
+  margin-top: 0;
+}
+
+@media (max-width: 980px) {
+  .site-footer .footer-inner > div:first-child {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+
+  .site-footer .footer-pathway {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-footer .footer-pathway {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-top: 0;
+  }
+
+  .site-footer .footer-step-link {
+    border-bottom: 1px solid rgba(7, 28, 62, .085);
+  }
+}

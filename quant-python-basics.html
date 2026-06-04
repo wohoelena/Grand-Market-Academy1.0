@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grand Markets Academy | 量化数据基础</title>
+  <meta name="description" content="学习 Python 数据读取、清洗、指标计算、研究提示记录和结果输出，建立数据量化研究的基础流程。">
+  <meta name="theme-color" content="#0A1628">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+  <link rel="icon" type="image/png" href="assets/gm-logo-icon-nav.png">
+  <link rel="stylesheet" href="css/style.css?v=20260604-footer-logo1">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="index.html" aria-label="Grand Markets Academy 首页"><img class="brand-logo-image" src="assets/gm-logo-icon-nav.png" alt="Grand Markets"><span class="brand-copy"><span class="brand-name">Grand Markets <em>Academy</em></span><span class="brand-subtitle">澳洲持牌金融教育机构 · AFSL 554475</span></span></a>
+    <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="主导航"><a href="index.html">首页</a><a href="rg146.html">金融从业</a><a class="is-active" href="quant.html">量化策略</a><a href="events.html">活动 &amp; 荣誉</a><a href="about.html">关于我们</a><a class="nav-cta" href="community.html">加入社区</a></nav>
+  </div>
+</header>
+<main class="module-page">
+  <section class="page-hero intro-hero">
+    <div class="container">
+      <p class="eyebrow">数据量化研究 · 模块一</p>
+      <h1>量化数据基础</h1>
+      <p>掌握量化研究的基础四步：数据准备、指标计算、研究提示记录和结果输出。</p>
+      <div class="intro-stat-grid">
+        <article class="intro-stat-card"><i class="ti ti-clock"></i><div><strong>2-3 小时</strong><span>预计学习时间</span></div></article>
+        <article class="intro-stat-card"><i class="ti ti-signal"></i><div><strong>入门进阶</strong><span>课程难度</span></div></article>
+        <article class="intro-stat-card"><i class="ti ti-code"></i><div><strong>基础代码能力</strong><span>前置要求</span></div></article>
+      </div>
+      <a class="back-link" href="quant-python.html">← 返回数据量化研究课</a>
+    </div>
+  </section>
+  <section class="section section-tinted">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">MODULE MAP</p><h2>四个基础环节</h2></div>
+      <div class="exam-module-grid">
+        <a class="exam-card exam-card-link" href="#data-prep"><span>01</span><h3>数据获取与预处理</h3><p>读取行情数据，检查日期、缺失值、重复值和异常价格。</p></a>
+        <a class="exam-card exam-card-link" href="#features"><span>02</span><h3>特征与指标计算</h3><p>把价格和成交量加工成可观察变量，如均线、波动率和区间特征。</p></a>
+        <a class="exam-card exam-card-link" href="#signal-gen"><span>03</span><h3>研究提示生成与记录</h3><p>把指标条件转成程序可记录的研究提示，方便后续测试。</p></a>
+        <a class="exam-card exam-card-link" href="#output"><span>04</span><h3>结果展示与文件输出</h3><p>把数据、指标和提示整理成图表或文件，便于检查和复盘。</p></a>
+      </div>
+    </div>
+  </section>
+  <section class="section auto-env-detail-section">
+    <div class="container auto-env-detail-stack">
+      <article class="auto-env-detail-card" id="data-prep">
+        <span class="detail-kicker">一、数据获取与预处理</span>
+        <h2>先让数据干净、完整、可识别</h2>
+        <p class="module-objective">本部分学习目标：学会读取行情数据，并完成基础清洗和格式整理。</p>
+        <p>Python 量化研究的第一步，是把数据准备好。常见字段包括日期、开盘价、最高价、最低价、收盘价和成交量。入门阶段可以先使用 CSV 或 Excel，因为它们更容易检查结构。</p>
+        <ul class="intro-list"><li>日期是否按时间顺序排列。</li><li>是否有缺失值或重复记录。</li><li>价格字段是否完整，格式能否被 Python 正确识别。</li><li>成交量是否存在明显异常。</li><li>不同字段是否对齐到同一时间点。</li></ul>
+        <p>数据没处理好，后面的指标、研究提示和回测都会跟着出错，所以数据预处理是整个研究流程的地基。</p>
+      </article>
+      <article class="auto-env-detail-card" id="features">
+        <span class="detail-kicker">二、特征与指标计算</span>
+        <h2>把原始价格加工成可分析变量</h2>
+        <p class="module-objective">本部分学习目标：理解如何用 Python 从原始价格中算出可分析的变量。</p>
+        <p>特征是从原始数据里加工出来的新变量，用来帮助观察市场状态。常见特征包括价格变化幅度、移动平均值、波动范围、成交量变化和高低区间。</p>
+        <ul class="intro-list"><li>MA 和 EMA：观察一段时间内的平均价格变化。</li><li>RSI：观察短期强弱状态。</li><li>ATR：观察价格波动范围。</li><li>MACD：观察趋势变化节奏。</li><li>区间特征：观察价格与近期高低范围之间的关系。</li></ul>
+        <p>指标本身不保证结果正确，它的作用是把价格变化翻译成程序能判断的数值。</p>
+      </article>
+      <article class="auto-env-detail-card" id="signal-gen">
+        <span class="detail-kicker">三、研究提示生成与记录</span>
+        <h2>让条件变成可检查的记录列</h2>
+        <p class="module-objective">本部分学习目标：理解如何把指标条件转化为程序可以记录的研究提示。</p>
+        <p>有了特征和指标，就可以记录研究提示。提示不是操作建议，而是程序对某个条件是否满足的记录，方便后续统计和复盘。</p>
+        <ul class="intro-list"><li>收盘价与近期区间高点形成特定关系。</li><li>短期均线与长期均线出现交叉。</li><li>RSI 进入预设观察区域。</li><li>成交量高于过去平均水平。</li><li>价格重新回到某个重要区间内。</li></ul>
+        <p>在 Python 里，提示通常记成一列数据，例如 1 代表条件满足，0 代表没有触发，负值代表反向观察状态。这样每个时间点都能被清楚记录。</p>
+      </article>
+      <article class="auto-env-detail-card" id="output">
+        <span class="detail-kicker">四、结果展示与文件输出</span>
+        <h2>把研究过程变成可查看资料</h2>
+        <p class="module-objective">本部分学习目标：学会把 Python 计算结果整理成可查看、可保存、可继续使用的形式。</p>
+        <p>分析做完后，要把数据、指标和研究提示整理成表格或图表。结果只留在代码里，很难检查问题，也不利于后续复盘。</p>
+        <ul class="intro-list"><li>价格走势图和均线叠加图。</li><li>价格变化幅度和指标变化曲线。</li><li>研究提示出现位置。</li><li>基础统计结果和样本数量。</li><li>CSV、Excel、图表图片或简短研究报告。</li></ul>
+        <p>如果图上提示位置明显不符合预期，通常说明代码、数据或规则表达需要重新检查。</p>
+      </article>
+    </div>
+  </section>
+  <section class="section section-tinted">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">METHOD</p><h2>学习方式</h2></div>
+      <div class="module-method-grid">
+        <article class="module-placeholder-card"><span>图文教程</span><h3>逐步理解</h3><p>用截图加短文字讲每一步，帮助新手看懂为什么要做数据读取、清洗、指标计算和输出。</p></article>
+        <article class="module-placeholder-card"><span>代码示例</span><h3>完整流程</h3><p>提供可运行的基础代码，覆盖数据读取、特征计算、研究提示记录和图表展示。</p></article>
+        <article class="module-placeholder-card"><span>实操练习</span><h3>小型任务</h3><p>读取价格数据、计算均线和变化幅度、记录简单观察提示，并输出图表。</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section"><div class="container module-cta"><a class="btn btn-primary" href="community.html">加入训练营 →</a><small>教育内容 · 不构成个性化操作建议</small></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-shell">
+    <div class="footer-logo-row"><div class="footer-logo-mark"><img src="assets/gm-logo-icon-nav.png" alt="Grand Markets Academy" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><span hidden>G</span></div><div class="footer-logo-copy"><strong>Grand Markets Academy</strong><span>澳洲持牌金融教育机构 · AFSL 554475</span></div></div>
+    <div class="footer-main"><div class="footer-nav-column"><h2>快捷导航</h2><nav class="footer-nav" aria-label="页脚导航"><a href="index.html">首页</a><a href="about.html">关于我们</a><a href="rg146.html">金融从业</a><a href="quant.html">量化策略</a><a href="events.html">活动 &amp; 荣誉</a><a href="community.html">加入社区</a></nav></div><div class="footer-licenses"><h2>监管资质</h2><div class="footer-license-list" aria-label="监管资质"><span>ASIC · AFSL #554475</span><span>Mauritius FSC</span><span>Comoros MISA</span></div></div><div class="footer-contact"><h2>联系我们</h2><ul><li><i class="ti ti-map-pin" aria-hidden="true"></i><span>801/1 Market St, Sydney NSW 2000</span></li><li><i class="ti ti-mail" aria-hidden="true"></i><span>support@grandmarkets.com</span></li><li><i class="ti ti-phone" aria-hidden="true"></i><span>+61 468 012 147</span></li><li><i class="ti ti-headset" aria-hidden="true"></i><span>7×24 小时在线客服</span></li></ul></div></div>
+    <div class="footer-risk-section"><p class="footer-risk">重要声明：Grand Markets Academy 提供的所有课程及内容仅作教育用途，不构成金融产品建议、投资建议或任何形式的要约。金融市场具有高度波动性，交易涉及资本损失风险，过往业绩不保证未来回报。在作出任何投资决策前，建议您咨询持牌金融顾问。本机构持有澳大利亚证券与投资委员会（ASIC）颁发的金融服务牌照，AFSL <span>#554475</span>。</p></div>
+    <div class="footer-bottom"><p class="copyright">© 2026 Grand Markets Academy. All rights reserved.</p><div class="footer-social" aria-label="社交媒体链接"><a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a><a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a><a href="#" aria-label="YouTube"><i class="ti ti-brand-youtube" aria-hidden="true"></i></a></div></div>
+  </div>
+</footer>
+<script src="js/nav.js?v=20260603-quant-detail-links01"></script>
+</body>
+</html>
